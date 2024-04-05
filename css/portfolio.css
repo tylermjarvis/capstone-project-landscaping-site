@@ -1,0 +1,178 @@
+/*-- Font --*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*-- Changing the default settings --*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*-- Colours --*/
+:root {
+  --primary-color: #b3967b;
+  --overlay: rgba(179, 150, 123, 0.95);
+  --secondary-color: #76846d;
+  --nav-color: #3e342d;
+  --background-color2: #2a3832;
+  --background-color3: #608051;
+  --background-color4: #afd094;
+  --background-color5: #fdeeb0;
+  --font-color1: #232222;
+  --font-color2: #f1f1ee;
+}
+
+/*-- Generalized Styling --*/
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+/*-- Mobile View --*/
+/*-- Portfolio Section --*/
+.portfolio-page {
+  background-color: var(--font-color1);
+  color: var(--font-color2);
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+.filter-container {
+  padding: 0.5rem;
+  width: 80%;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.button-value {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--background-color3);
+  color: var(--font-color2);
+  font-size: 0.8rem;
+  width: 7rem;
+  margin: 0.5rem;
+}
+
+.button-value:hover {
+  background-color: var(--primary-color);
+  color: var(--font-color1);
+}
+
+/*
+.filter-select {
+  padding: 0.5rem;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+*/
+
+.filter-header {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.portfolio-picture-container {
+  margin-bottom: 3rem;
+}
+
+.portfolio-page-picture-background {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.8rem;
+  padding-bottom: 0;
+  background-color: var(--nav-color);
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 0.8rem;
+}
+
+.portfolio-figure {
+  position: relative;
+  text-align: center;
+}
+
+.picture {
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  background-color: var(--overlay);
+  top: 0.5rem;
+  left: 1rem;
+  width: 90%;
+  height: 3rem;
+}
+
+.image-text {
+  margin: 0;
+  color: var(--font-color1);
+  font-size: 0.8rem;
+}
+
+/*-- Button --*/
+.button-container {
+  text-align: center;
+}
+
+.portfolio-button {
+  padding: 0.5rem;
+  background-color: var(--background-color3);
+  color: var(--font-color2);
+  border-radius: 0.2rem;
+  width: 15rem;
+  border-color: var(--font-color1);
+  cursor: pointer;
+}
+
+.portfolio-button:hover {
+  background-color: var(--primary-color);
+  color: var(--font-color1);
+  transition: all 0.3s ease;
+}
+
+/*-- Tablet View --*/
+@media screen and (min-width: 45rem) {
+  .figures {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*-- Desktop View --*/
+@media screen and (min-width: 62rem) {
+  .filter-select {
+    width: 50%;
+  }
+
+  .overlay {
+    top: 1rem;
+    left: 2rem;
+    width: 90%;
+    height: 5rem;
+  }
+
+  .image-text {
+    font-size: 1rem;
+  }
+
+  .portfolio-button {
+    width: 25rem;
+  }
+}

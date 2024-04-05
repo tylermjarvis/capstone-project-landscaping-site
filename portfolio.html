@@ -6,183 +6,454 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <title>LANDSHAPEZ</title>
   </head>
   <body>
     <header>
-      <!-- NavBar-->
-      <nav>
-        <button class="navbar-toggler">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul>
-            <img
-              src="images/Landshapez_Logo.png"
+      <!-- Navbar -->
+      </nav>
+      <nav class="navbar navbar-expand-xl">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+        <img
+              src="assets/Landshapez_Logo.png"
               class="logo"
               alt="Landshapez logo"
+              width="150" height="20"
             />
-            <li class="nav-item">
+        </a>
+            <button class="navbar-toggler collapsed d-flex d-xl-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-contols="navbarNav" aria-expended="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+      <ul class="navbar-nav nav-list">
+        <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="about">About</a>
+              <a class="nav-link active" href="#portfolio">Portfolio</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" id="gardening">Gardening</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="paving-tiling">Paving/Tiling</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="retaining">Retaining</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="fencing">Fencing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
 
-    <main>
+  <main>
     <!-- Portfolio Section -->
-      <section id="portfolio">
-        <div class="container-portfolio">
-          <h1>Portfolio</h1>
-          <p class="portfolio-paragraph">
-            Our portfolio features a user-friendly filter option, allowing you to easily retrieve images specific to the service you're interested in. 
-            Whether it's gardening, paving and tiling, retaining or fencing, you can quickly access relevant images that inspire and inform your project ideas. 
+      <section id="portfolio" class="portfolio-page">
+        <div class="container">
+        <div class="row showcase-portfolio-page">
+          <h1 class="section-header">Portfolio</h1>
+          <p class="section-paragraph mx-auto">
+            Our portfolio features a user-friendly filter option, allowing you to easily retrieve assets specific to the service you're interested in. 
+            Whether it's gardening, paving and tiling, retaining or fencing, you can quickly access relevant assets that inspire and inform your project ideas. 
             Our portfolio offers a visual journey through our expertise and creativity. Start exploring today to find inspiration for your next landscaping 
             endeavour with Landshapez.
           </p>
-          <h2>Filter By:</h2>
-        </div>
-        <div class="picture-container">
 
-            <!-- Column 1 -->
-            <div class="main-col">
-                    <figure class="row-figure">
+          <p class="filter-header">Filter By:</p>
+          <div class="filter-container text-center mx-auto" id="buttons">
+            <button class="button-value" data-filter="all">All</button>
+            <button class="button-value" data-filter="gardening">Gardening</button>
+            <button class="button-value" data-filter="paving-tiling">Paving/Tiling</button>
+            <button class="button-value" data-filter="retaining">Retaining</button>
+            <button class="button-value" data-filter="fencing">Fencing</button>
+          </div>
+      </div>
+
+        <!-- Portfolio -->
+        <div class="portfolio-picture-container">
+          <div class="portfolio-page-picture-background">
+
+            <div id="pictures" class="figures">
+              <!-- Grid -->
+                        <figure class="portfolio-figure figure-item gardening paving-tiling">
                         <img
-                            src="images/Last-landscaping-photos-60.jpg"
-                            class="portfolio-page-image"
+                            src="assets/Last-landscaping-photos-60.jpg"
+                            class="picture"
                             alt="Side path with pavers, mondo grass and garden"
                         />
-                        <figcaption class="figcaption">
-                            <p>
-                                Mondo grass between pavers<br>Ferns and Bromeliads in the garden
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Mondo grass between pavers with fern and bromeliad garden
                             </p>
                         </figcaption>
                     </figure>
-                    <figure class="row-figure">
+
+                        <figure class="portfolio-figure figure-item gardening">
                         <img
-                            src="images/landscaping-lightroom-photos/lightroom-landscaping-final/Landscaping-photo-11.jpg"
-                            class="portfolio-page-image"
-                            alt="Garden with white stone as a filler"
-                        />
-                        <figcaption class="figcaption">
-                            <p>
-                                Tropical garden<br>With white stone as a filler
-                            </p>
-                        </figcaption>
-                    </figure>
-                    <figure class="row-figure">
-                        <img
-                            src="images/landscaping-lightroom-photos/lightroom-landscaping-final/Last-landscaping-photos-9.jpg"
-                            class="portfolio-page-image"
-                            alt="Planter box with ready lawn"
-                        />
-                        <figcaption class="figcaption">
-                            <p>
-                                Planter box<br>With ready lawn
-                            </p>
-                        </figcaption>
-                    </figure>
-                    <figure class="row-figure">
-                        <img
-                            src="images/landscaping-lightroom-photos/lightroom-landscaping-final/Last-landscaping-photos-56.jpg"
-                            class="portfolio-page-image"
-                            alt="Garden with bromeliads"
-                        />
-                        <figcaption class="figcaption">
-                            <p>
-                                Bromeliad garden
-                            </p>
-                        </figcaption>
-                    </figure>
-              </div>
- 
-            <!-- Column 2 -->
-            <div class="main-col">
-                    <figure class="row-figure">
-                        <img
-                            src="images/landscaping-lightroom-photos/lightroom-landscaping-final/Last-landscaping-photos-80.jpg"
-                            class="portfolio-page-image"
-                            alt="Back garden with ready lawn"
-                        />
-                        <figcaption class="figcaption">
-                            <p>
-                                Backyard with ready lawn
-                            </p>
-                        </figcaption>
-                    </figure>
-                    <figure class="row-figure">
-                        <img
-                            src="images/landscaping-lightroom-photos/lightroom-landscaping-final/More-landscaping-photos-51.jpg"
-                            class="portfolio-page-image"
-                            alt="Ready lawn with paving path"
-                        />
-                        <figcaption class="figcaption">
-                            <p>
-                                Ready lawn<br>With paving path
-                            </p>
-                        </figcaption>
-                    </figure>
-                    <figure class="row-figure">
-                        <img
-                            src="images/landscaping-lightroom-photos/lightroom-landscaping-final/Landscaping-photo-58.jpg"
-                            class="portfolio-page-image"
-                            alt="Pebble filler in garden"
-                        />
-                        <figcaption class="figcaption">
-                            <p>
-                                Garden<br>With weed mat and pebble filler
-                            </p>
-                    </figure>
-                    <figure class="row-figure">
-                        <img
-                            src="images/landscaping-lightroom-photos/lightroom-landscaping-final/Landscaping-photo-71.jpg"
-                            class="portfolio-page-image"
+                            src="assets/Landscaping-photo-71.jpg"
+                            class="picture"
                             alt="Maintained garden"
                         />
-                        <figcaption class="figcaption">
-                            <p>
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
                                 Maintained garden
                             </p>
                         </figcaption>
                     </figure>
+
+                        <figure class="portfolio-figure figure-item gardening">
+                        <img
+                            src="assets/Last-landscaping-photos-47.jpg"
+                            class="picture"
+                            alt="Back garden with ready lawn"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Backyard with ready lawn
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item gardening">
+                        <img
+                            src="assets/More-landscaping-photos-27.jpg"
+                            class="picture"
+                            alt="Ready lawn"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Ready lawn
+                            </p>
+                        </figcaption>
+                    </figure>
+
+
+                        <figure class="portfolio-figure figure-item gardening">
+                        <img
+                            src="assets/Landscaping-photo-58.jpg"
+                            class="picture"
+                            alt="Pebble filler in garden"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Garden with weed mat and pebble filler
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item gardening">
+                        <img
+                            src="assets/Landscaping-photo-11.jpg"
+                            class="picture"
+                            alt="Garden with white stone as a filler"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Tropical garden<br>With white stone as a filler
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item gardening">
+                        <img
+                            src="assets/Last-landscaping-photos-5.jpg"
+                            class="picture"
+                            alt="Planter box with ready lawn"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Planter box<br>With ready lawn
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item gardening">
+                        <img
+                            src="assets/Last-landscaping-photos-56.jpg"
+                            class="picture"
+                            alt="Garden with bromeliads"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Bromeliad garden
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item paving-tiling">
+                        <img
+                            src="assets/Landscaping-photo-1.jpg"
+                            class="picture"
+                            alt="Paved path and stone planter boxes"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Paved path<br>With stone planter boxes
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item gardening">
+                        <img
+                            src="assets/Landscaping-photo-14.jpg"
+                            class="picture"
+                            alt="Garden with white stone filler"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Garden with white stone filler
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item fencing">
+                        <img
+                            src="assets/Landscaping-photo-19.jpg"
+                            class="picture"
+                            alt="Thin wooden fence"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Thin wooden fence
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item paving-tiling">
+                        <img
+                            src="assets/Landscaping-photo-42.jpg"
+                            class="picture"
+                            alt="Herringbone pathway"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Herringbone pattern pathway
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item paving-tiling">
+                        <img
+                            src="assets/More-landscaping-photos-34.jpg"
+                            class="picture"
+                            alt="Pool coping"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Pool coping with porphyry paving
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item fencing">
+                        <img
+                            src="assets/Fencing-3.jpg"
+                            class="picture"
+                            alt="Steel fencing"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Steel fencing
+                            </p>
+                        </figcaption>
+                    </figure>
+ 
+                        <figure class="portfolio-figure figure-item paving-tiling">
+                        <img
+                            src="assets/Landscaping-photo-68.jpg"
+                            class="picture"
+                            alt="Paved garden area"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Paved garden area
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item paving-tiling">
+                        <img
+                            src="assets/Last-landscaping-photos-40.jpg"
+                            class="picture"
+                            alt="Large paved area"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Large paved area with herringbone pattern
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item paving-tiling">
+                        <img
+                            src="assets/More-landscaping-photos-60.jpg"
+                            class="picture"
+                            alt="Paved pathway in frontyard"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Paved pathway in frontyard
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item paving-tiling retaining">
+                        <img
+                            src="assets/Landscaping-photo-65.jpg"
+                            class="picture"
+                            alt="Paved backyard with keystone wall figures paving-tiling retaining"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Paved backyard with keystone wall
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item retaining">
+                        <img
+                            src="assets/More-landscaping-photos-15.jpg"
+                            class="picture"
+                            alt="Retaining wall"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Retaining wall
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item retaining fencing">
+                        <img
+                            src="assets/Landscaping-photo-18.jpg"
+                            class="picture"
+                            alt="Retaining wall and fence"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Retaining wall and fence
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item paving-tiling">
+                        <img
+                            src="assets/Landscaping-photo-38.jpg"
+                            class="picture"
+                            alt="Paving with pebble filler"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Paving with pebble filler
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item gardening">
+                        <img
+                            src="assets/Landscaping-photo-45.jpg"
+                            class="picture"
+                            alt="Maintained backyard"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Maintained backyard
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item gardening paving-tiling retaining">
+                        <img
+                            src="assets/More-landscaping-photos-23.jpg"
+                            class="picture"
+                            alt="Ready Lawn, tiling and retaining"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Ready Lawn, tiling and retaining
+                            </p>
+                        </figcaption>
+                    </figure>
+
+                        <figure class="portfolio-figure figure-item paving-tiling">
+                        <img
+                            src="assets/Landscaping-photo-52.jpg"
+                            class="picture"
+                            alt="Grass pavers"
+                        />
+                        <figcaption class="overlay figcaption d-flex justify-content-center align-items-center">
+                            <p class="image-text">
+                                Grass pavers
+                            </p>
+                        </figcaption>
+                    </figure>
+                    </div>
+              </div>
               </div>
 
-         <button href="index.html">Home</button>
+        <div class="button-container">
+         <button class="portfolio-button bolder" onclick="window.location.href='index.html'">Home</button>
+         </div>
+         </div>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <hr class="socket">
+    <footer class="footer">
+      <div class="text-center">
+          <button class="to-top" onClick="toTop()">Back to Top</button>
+        </div>
+        <hr class="socket mx-auto">
             <p class="copy">&copy; LANDSHAPEZ. All rights reserved.</p>
         </hr>
     </footer>
+
+    <!-- Chatbot -->
+  <div>
+  <button class="chatbot-toggler">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <h5 class="chatbot-heading">Landscaping Bot</h5>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">
+          <img src="./assets/chatbot.png" alt="picture of a robot" width="30" height="30" />
+        </span>
+        <p>Gidday!<br>What would you like to know more about?
+        <br><br>Please enter one of the options listed below...
+        <br><br>- The company and landscaper experience
+        <br>- Gardening
+        <br>- Paving or tiling
+        <br>- Retaining
+        <br>- Fencing
+        <br>- Get in contact
+        <br>- Previous work/portfolio
+        <br>- How to use the filter by on the portfolio page
+        <br>- Get back to the home page
+        <br>- How to use the hamburger menu
+      </p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a question..." required></textarea>
+      <span id="send-btn" class="material-symbols-outlined">send</span>
+    </div>
+  </div>
+  </div>
+
+    <!-- JavaScript Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/filter-by.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll-animation.js"></script>
+    <script src="js/chat-bot.js" defer></script>
+    <script src="js/to-top.js"></script>
   </body>
 </html>

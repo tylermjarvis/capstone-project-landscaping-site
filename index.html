@@ -6,58 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap CSS -->
-    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <title>LANDSHAPEZ</title>
   </head>
   <body>
     <header>
-      <!-- NavBar-->
-      <nav>
-        <button class="navbar-toggler">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul>
-            <img
-              src="images/Landshapez_Logo.png"
+      <!-- Navbar -->
+  <nav class="navbar navbar-expand-xl">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img
+              src="assets/Landshapez_Logo.png"
               class="logo"
               alt="Landshapez logo"
+              width="150" height="20"
             />
-            <li class="nav-item">
-              <a class="nav-link">Home</a>
+        </a>
+            <button class="navbar-toggler collapsed d-flex d-xl-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-contols="navbarNav" aria-expended="false" aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+      <ul class="navbar-nav nav-list">
+        <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="about">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="gardening">Gardening</a>
+              <a class="nav-link" href="#gardening">Gardening</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="paving-tiling">Paving/Tiling</a>
+              <a class="nav-link" href="#paving-tiling">Paving/Tiling</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="retaining">Retaining</a>
+              <a class="nav-link" href="#retaining">Retaining</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="fencing">Fencing</a>
+              <a class="nav-link" href="#fencing">Fencing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="contact">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
-          </ul>
-        </div>
-      </nav>
+      </ul>
+    </div>
+  </div>
+</nav>
 
       <!-- Hero Section -->
-      <section id="hero">
-        <div class="caption">
+      <section id="hero" class="hero">
+        <div class="darken-image"></div>
+        <div class="caption text-center">
           <p class="caption-1">
             Elevate Your Outdoor Space With<br />Expert Landscaping
             Services.<br />From Lush Green Gardens to Unique Paving
@@ -69,10 +81,13 @@
 
     <main>
       <!-- About Section -->
-      <section id="about">
-        <div class="container-about">
-          <h1>About</h1>
-          <p class="about-paragraph">
+      <section id="about" class="about-section mx-auto d-flex align-items-center">
+        <div class="container">
+        <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <div class="container showcase-left">
+          <h1 class="section-header text-shadow">About</h1>
+          <p class="section-paragraph mx-auto">
             Hi I'm Andy, the founder of Landshapez. I have over two decades of
             experience in landscaping, transforming outdoor spaces into
             breathtaking and practical havens. At Landshapez, we pride ourselves
@@ -81,21 +96,26 @@
             solutions, we're dedicated to bringing your vision to life. Let's
             craft the perfect outdoor space together!
           </p>
+          </div>
         </div>
-        <div>
+        <div class="col-md-6">
           <img
-            src="images/andy-profile-pic.png"
-            class="about image"
+            src="assets/andy-profile-pic-1.png"
+            class="about-image"
             alt="Andy's picture"
           />
+        </div>
+        </div>
         </div>
       </section>
 
       <!-- Gardening Section -->
-      <section id="gardening">
-        <div class="container gardening">
-          <h1>Gardening</h1>
-          <p class="gardening-paragraph">
+      <section id="gardening" class="gardening-section d-flex align-items-center">
+        <div class="container">
+        <div class="container-gardening col-sm-12">
+          <div class="container">
+          <h1 class="section-header text-shadow">Gardening</h1>
+          <p class="section-paragraph mx-auto">
             Our gardening services encompass a range of offerings, including
             expert planting and filler selection to create vibrant and
             harmonious landscapes. We specialize in the installation of ready
@@ -105,64 +125,58 @@
             healthy year-round, with regular care and attention to preserve
             their beauty.
           </p>
+          </div>
         </div>
-        <!-- Gardening Grid Items -->
-        <div class="container grid">
-          <div class="row">
+        <!-- Gardening Card Items -->
+        <div class="container card-items showcase-card">
+          <div class="row justify-content-center">
             <!-- Gardening Item 1 -->
-            <div class="column">
+            <div class="col-12 col-md-6 col-lg-4 stretch">
               <figure class="figure">
                 <img
-                  src="images/Planting 1.jpg"
+                  src="assets/Planting 1.jpg"
                   class="gardening image"
                   alt="Plants with garden filler"
                 />
                 <figcaption class="figcaption">
-                    <h2>Planting & Filler<h2>
-                    <p>
-                        We work with various fillers, including pebbles, 
-                        small stones, bark, or soil, to create visually appealing and 
-                        ell-balanced landscapes. These fillers not only add texture and 
-                        depth but also serve practical purposes such as weed suppression 
-                        and moisture retention. In addition to fillers, we offer planting 
-                        services encompass a diverse array of options tailored to your 
-                        preferences and landscape requirements. Whether you're envisioning 
-                        neatly trimmed hedges for added privacy and structure or vibrant 
-                        native plants to attract wildlife.
+                    <h2 class="figure-header">Planting</h2>
+                    <p class="figcaption-paragraph">
+                        We use stones, bark, or soil to craft visually pleasing landscapes, offering texture, 
+                        depth, weed control, and moisture preservation. Our planting services cater to diverse preferences, 
+                        from hedges to native plants.
                     </p>
                 </figcaption>
                 </figure>
                 </div>
                 <!-- Gardening Item 2 -->
-                <div class="column">
+                <div class="col-12 col-md-6 col-lg-4 stretch">
               <figure class="figure">
                 <img
-                  src="images/Landscaping-photo-27.jpg"
+                  src="assets/Landscaping-photo-27.jpg"
                   class="gardening image"
                   alt="Freshly laid ready lawn"
                 />
                 <figcaption class="figcaption">
-                    <h2>Ready Lawn<h2>
-                    <p>
-                        Ready lawn, also known as instant lawn or turf, offers a convenient 
-                        solution for quickly establishing a lush and vibrant grass surface in 
-                        your outdoor space. With Landshapez, you can enjoy the beauty of a healthy, 
-                        green lawn without the hassle of traditional seeding or sodding methods.
+                    <h2 class="figure-header">Ready Lawn</h2>
+                    <p class="figcaption-paragraph">
+                        Ready lawn, offers a convenient solution for quickly establishing a lush and 
+                        vibrant grass surface in your outdoor space. Enjoy the beauty of a healthy, green lawn 
+                        without the hassle of traditional seeding or sodding methods.
                     </p>
                 </figcaption>
                 </figure>
               </div>
               <!-- Gardening Item 3 -->
-                <div class="column">
+                <div class="col-12 col-md-6 col-lg-4 stretch">
               <figure class="figure">
                 <img
-                  src="images/Landscaping-photo-43.jpg"
+                  src="assets/Landscaping-photo-43.jpg"
                   class="gardening image"
                   alt="A maintained garden area"
                 />
                 <figcaption class="figcaption">
-                    <h2>Maintenance<h2>
-                    <p>
+                    <h2 class="figure-header">Maintenance</h2>
+                    <p class="figcaption-paragraph">
                         Landshapez provides comprehensive maintenance services to keep your outdoor space 
                         looking its best year-round. From pruning to weeding, our skilled team ensures that 
                         your garden remains healthy, tidy, and visually appealing.
@@ -172,70 +186,71 @@
               </div>
             </div>
           </div>
-          <div class="container suppliers">
-            <h3>Suppliers We Use</h3>
-            <p class="suppliers-paragraph">
+          <div class="container suppliers showcase-bottom">
+            <h3 class="suppliers-header text-shadow">Suppliers We Use</h3>
+            <p class="suppliers-paragraph mx-auto">
                 Check out the companies below for gardening inspiration!
             </p>
-            <ul class="suppliers">
-                <li class="suppliers">
-                    <a class="suppliers-link" href="https://www.bunnings.co.nz/products/garden" target="_blank">Bunnings</a>
+            <ul class="suppliers-list">
+                <li class="suppliers-list-item">
+                    <a class="suppliers-link white-font" href="https://www.bunnings.co.nz/products/garden" target="_blank">Bunnings</a>
                 </li>
-                <li class="suppliers">
-                    <a class="suppliers-link" href="https://www.youtube.com/watch?v=vH2Z3tf-lDc" target="_blank">Roger Hunter's Garden Centre</a>
+                <div class="content-underline black-underline mx-auto"></div>
+                <li class="suppliers-list-item">
+                    <a class="suppliers-link white-font" href="https://www.youtube.com/watch?v=vH2Z3tf-lDc" target="_blank">Roger Hunter's Garden Centre</a>
                 </li>
             </ul>
+          </div>
           </div>
       </section>
 
     <!-- Paving/Tiling Section -->
-      <section id="paving-tiling">
-        <div class="container paving-tiling">
-          <h1>Paving/Tiling</h1>
-          <p class="paving-tiling-paragraph">
+      <section id="paving-tiling" class="paving-tiling-section d-flex align-items-center">
+        <div class="container">
+        <div class="container-paving-tiling col-sm-12">
+          <div class="container">
+          <h1 class="section-header">Paving/Tiling</h1>
+          <p class="section-paragraph mx-auto">
             We specialize in crafting elegant and durable paving and tiling solutions for gardens, pool areas, 
             pool coping, driveways and patios. Whether it's creating a sophisticated pathway through a garden 
             oasis or enhancing the functionality and aesthetics of pool surroundings, we prioritize quality 
             craftsmanship and attention to detail in every project.
           </p>
+          </div>
         </div>
-        <!-- Paving/Tiling Grid Items -->
-        <div class="container grid">
-          <div class="row">
+        <!-- Paving/Tiling Card Items -->
+        <div class="container card-items">
+          <div class="row justify-content-center">
             <!-- Paving/Tiling Item 1 -->
-            <div class="column">
+            <div class="col-12 col-md-6 col-lg-4 stretch">
               <figure class="figure">
                 <img
-                  src="images/Last-landscaping-photos-77.jpg"
+                  src="assets/Last-landscaping-photos-77.jpg"
                   class="paving-tiling image"
                   alt="Paved pathway"
                 />
                 <figcaption class="figcaption">
-                    <h2>Paving<h2>
-                    <p>
+                    <h2 class="figure-header white-font">Paving</h2>
+                    <p class="figcaption-paragraph white-font">
                         Landshapez offers captivating paving displays that showcase a wide range of design options and 
-                        materials for outdoor spaces. From intricate patterns such as herringbone to modern textures, 
-                        our displays inspire creativity and help clients envision the perfect paving solution for their 
-                        landscaping projects.
+                        materials for outdoor spaces. From intricate patterns such as herringbone to modern textures.
                     </p>
                 </figcaption>
                 </figure>
                 </div>
                 <!-- Paving/Tiling Item 2 -->
-                <div class="column">
+                <div class="col-12 col-md-6 col-lg-4 stretch">
               <figure class="figure">
                 <img
-                  src="images/More-landscaping-photos-19.jpg"
+                  src="assets/More-landscaping-photos-19.jpg"
                   class="paving-tiling image"
                   alt="Laid tiles in a backyard"
                 />
                 <figcaption class="figcaption">
-                    <h2>Tiling<h2>
-                    <p>
-                        Landshapez presents stunning tiling displays, highlighting an array of styles and materials 
-                        suited for various outdoor applications. Our displays provide inspiration and guidance, allowing 
-                        clients to visualize the perfect tiling solutions for their garden, pool area, or patio projects 
-                        with confidence and ease.
+                    <h2 class="figure-header white-font">Tiling</h2>
+                    <p class="figcaption-paragraph white-font">
+                        Landshapez presents stunning tiling displays, highlighting an array of styles and materials for various 
+                        outdoor areas. Visualize the perfect tiling solutions for gardens, pool areas, or patio projects.
                     </p>
                 </figcaption>
                 </figure>
@@ -243,88 +258,88 @@
             </div>
           </div>
           <div class="container suppliers">
-            <h3>Suppliers We Use</h3>
-            <p class="suppliers-paragraph">
-                Check out the companies below for gardening inspiration!
+            <h3 class="suppliers-header">Suppliers We Use</h3>
+            <p class="suppliers-paragraph mx-auto">
+                Check out the companies below for paving and tiling inspiration!
             </p>
-            <ul class="suppliers">
-                <li class="suppliers">
-                    <a class="suppliers-link" href="https://www.bunnings.co.nz/products/garden/landscaping/paving-stones" target="_blank">Bunnings</a>
+            <ul class="suppliers-list">
+                <li class="suppliers-list-item">
+                    <a class="suppliers-link black-font different-hover" href="https://www.bunnings.co.nz/products/garden/landscaping/paving-stones" target="_blank">Bunnings</a>
                 </li>
-                <li class="suppliers">
-                    <a class="suppliers-link" href="https://www.firth.co.nz/paving-and-retaining/residential-pavers/" target="_blank">Firth</a>
+                 <div class="content-underline white-underline mx-auto"></div>
+                <li class="suppliers-list-item">
+                    <a class="suppliers-link black-font different-hover" href="https://www.firth.co.nz/paving-and-retaining/residential-pavers/" target="_blank">Firth</a>
                 </li>
             </ul>
+          </div>
           </div>
       </section>
 
       <!-- Retaining Section -->
-      <section id="retaining">
-        <div class="container retaining">
-          <h1>Retaining</h1>
-          <p class="retaining-paragraph">
+      <section id="retaining" class="retaining-section d-flex align-items-center">
+        <div class="container">
+        <div class="container-retaining col-sm-12">
+          <div class="container">
+          <h1 class="section-header">Retaining</h1>
+          <p class="section-paragraph mx-auto">
             We provide quality service for the construction of sturdy and aesthetically pleasing 
             retaining walls using a variety of materials, including sleepers and keystone walls. Whether 
             it's to level uneven terrain, prevent erosion, or create defined garden beds, our team is 
             dedicated to delivering top-quality solutions that enhance both the functionality and visual 
             appeal of outdoor environments.
           </p>
+          </div>
         </div>
-        <!-- Retaining Grid Items -->
-        <div class="container grid">
-          <div class="row">
+        <!-- Retaining Card Items -->
+        <div class="container card-items">
+          <div class="row justify-content-center">
             <!-- Retaining Item 1 -->
-            <div class="column">
-              <figure class="figure">
+            <div class="col-12 col-md-6 col-lg-4 stretch card-1">
+              <figure class="figure brown-figure">
                 <img
-                  src="images/Sleeper 3.jpg"
+                  src="assets/Sleeper 3.jpg"
                   class="retaining image"
                   alt="Wooden sleepers stairs"
                 />
                 <figcaption class="figcaption">
-                    <h2>Sleepers<h2>
-                    <p>
-                       Landshapez offers a selection of railway sleeper types, including hardwood, softwood, 
-                       and reclaimed options, perfect for creating distinctive and durable landscaping features. 
-                       With their rustic charm and robust construction, railway sleepers add character and functionality 
-                       to gardens, retaining walls, and other outdoor spaces.
+                    <h2 class="figure-header black-font">Sleepers</h2>
+                    <p class="figcaption-paragraph black-font">
+                       Landshapez provides hardwood, softwood, and reclaimed railway sleepers, ideal for distinctive landscaping. 
+                       They add charm and function to gardens and outdoor areas.
                     </p>
                 </figcaption>
                 </figure>
                 </div>
                 <!-- Retaining Item 2 -->
-                <div class="column">
-              <figure class="figure">
+                <div class="col-12 col-md-6 col-lg-4 stretch card-2">
+              <figure class="figure green-figure">
                 <img
-                  src="images/Landscaping-photo-35.jpg"
+                  src="assets/Landscaping-photo-35.jpg"
                   class="retaining image"
                   alt="Large keystone wall behind stairs"
                 />
                 <figcaption class="figcaption">
-                    <h2>KeyStones<h2>
-                    <p>
-                        Landshapez presents a variety of keystone types, ranging from natural stone to concrete, designed 
-                        to provide structural stability and visual appeal to landscaping projects. Keystone options offer 
-                        versatility and durability, ensuring they can withstand the demands of retaining walls while enhancing 
-                        he aesthetic beauty of outdoor spaces.
+                    <h2 class="figure-header white-font">KeyStones</h2>
+                    <p class="figcaption-paragraph white-font">
+                        Landshapez offers versatile keystone options, from natural stone to concrete, ensuring structural stability and 
+                        aesthetic appeal in landscaping projects.
                     </p>
                 </figcaption>
                 </figure>
               </div>
               <!-- Retaining Item 3 -->
-                <div class="column">
-              <figure class="figure">
+                <div class="col-12 col-md-6 col-lg-4 stretch card-3">
+              <figure class="figure brown-figure">
                 <img
-                  src="images/More-landscaping-photos-15.jpg"
+                  src="assets/More-landscaping-photos-15.jpg"
                   class="retaining image"
                   alt="Wooden wall retaining garden"
                 />
                 <figcaption class="figcaption">
-                    <h2>Retaining Walls<h2>
-                    <p>
-                        Retaining walls offer both functional support and aesthetic enhancement, providing stability for elevated 
-                        terrain while adding visual interest to landscapes. With various materials and designs available, our retaining 
-                        walls can be customized to suit the unique style and structural needs of any outdoor space.
+                    <h2 class="figure-header black-font">Retaining Walls</h2>
+                    <p class="figcaption-paragraph black-font">
+                        Retaining walls blend function with aesthetics, offering stability for elevated terrain and enhancing landscape beauty. 
+                        Customize with diverse materials and designs.
                     </p>
                 </figcaption>
                 </figure>
@@ -332,60 +347,63 @@
             </div>
           </div>
           <div class="container suppliers">
-            <h3>Suppliers We Use</h3>
-            <p class="suppliers-paragraph">
-                Check out the companies below for gardening inspiration!
+            <h3 class="suppliers-header">Suppliers We Use</h3>
+            <p class="suppliers-paragraph mx-auto">
+                Check out the companies below for retaining inspiration!
             </p>
-            <ul class="suppliers">
-                <li class="suppliers">
-                    <a class="suppliers-link" href="https://www.bunnings.com.au/products/building-hardware/timber/retaining-walls?page=1&pageSize=36" target="_blank">Bunnings</a>
+            <ul class="suppliers-list">
+                <li class="suppliers-list-item">
+                    <a class="suppliers-link white-font" href="https://www.bunnings.com.au/products/building-hardware/timber/retaining-walls?page=1&pageSize=36" target="_blank">Bunnings</a>
                 </li>
             </ul>
+          </div>
           </div>
       </section>
 
       <!-- Fencing Section -->
-      <section id="fencing">
-        <div class="container fencing">
-          <h1>Fencing</h1>
-          <p class="fencing-paragraph">
+      <section id="fencing" class="fencing-section d-flex align-items-center">
+        <div class="container">
+        <div class="container-fencing">
+          <div class="container">
+          <h1 class="section-header text-shadow">Fencing</h1>
+          <p class="section-paragraph mx-auto">
             Landshapez offers professional landscaping fencing services to enhance privacy, security, and aesthetic appeal in outdoor spaces. 
             We specialize in the installation of wooden and steel fencing solutions tailored to the specific needs of each client, whether you’re 
             looking for a rustic charm with wooden fencing or a sleek and modern look with steel fencing.
           </p>
+          </div>
         </div>
-        <!-- Fencing Grid Items -->
-        <div class="container grid">
-          <div class="row">
+        <!-- Fencing Card Items -->
+        <div class="container card-items">
+          <div class="row justify-content-center">
             <!-- Fencing Item 1 -->
-            <div class="column">
+            <div class="col-12 col-md-6 col-lg-4 stretch">
               <figure class="figure">
                 <img
-                  src="images/Landscaping-photo-19.jpg"
+                  src="assets/Landscaping-photo-19.jpg"
                   class="fencing image"
                   alt="Thin wood fencing"
                 />
                 <figcaption class="figcaption">
-                    <h2>Wooden Fencing<h2>
-                    <p>
-                        Wooden fencing solutions offer natural beauty with durability, providing privacy, security, and defining boundaries for outdoor spaces. 
-                        Our wooden fences are crafted from quality materials and can be customized to complement any architectural style, enhancing the aesthetic 
-                        appeal of residential properties.
+                    <h2 class="figure-header white-font">Wooden Fencing</h2>
+                    <p class="figcaption-paragraph white-font">
+                        Wooden fences combine natural beauty with durability, offering privacy, security, and boundary definition. Crafted from quality materials, 
+                        customizable to any architectural style.
                     </p>
                 </figcaption>
                 </figure>
                 </div>
                 <!-- Fencing Item 2 -->
-                <div class="column">
+                <div class="col-12 col-md-6 col-lg-4 stretch">
                     <figure class="figure">
                         <img
-                            src="images/Steel-fencing.jpg"
+                            src="assets/steel-fencing2.jpg"
                             class="fencing image"
                             alt="Black steel fencing"
                         />
                         <figcaption class="figcaption">
-                            <h2>Steel Fencing<h2>
-                            <p>
+                            <h2 class="figure-header white-font">Steel Fencing</h2>
+                            <p class="figcaption-paragraph white-font">
                                 Steel fencing solutions, provide robust security and boundary delineation. Our steel fences are built to withstand harsh weather conditions 
                                 and offer a sleek, modern aesthetic that adds both functionality and style to any property.
                             </p>
@@ -395,43 +413,49 @@
             </div>
           </div>
           <div class="container suppliers">
-            <h3>Suppliers We Use</h3>
-            <p class="suppliers-paragraph">
-                Check out the companies below for gardening inspiration!
+            <h3 class="suppliers-header text-shadow">Suppliers We Use</h3>
+            <p class="suppliers-paragraph mx-auto">
+                Check out the companies below for fencing inspiration!
             </p>
-            <ul class="suppliers">
-                <li class="suppliers">
-                    <a class="suppliers-link" href="https://www.bunnings.co.nz/products/building-hardware/fencing" target="_blank">Bunnings</a>
+            <ul class="suppliers-list">
+                <li class="suppliers-list-item">
+                    <a class="suppliers-link white-font" href="https://www.bunnings.co.nz/products/building-hardware/fencing" target="_blank">Bunnings</a>
                 </li>
             </ul>
+          </div>
           </div>
       </section>
 
       <!-- Portfolio Section -->
-      <section id="portfolio">
-        <div class="container-portfolio">
-          <h1>Portfolio</h1>
-          <p class="portfolio-paragraph">
+      <section id="portfolio" class="portfolio-section d-flex align-items-center">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+        <div class="container-portfolio col-12 col-md-12 col-lg-5 showcase-portfolio">
+          <div class="container grid">
+          <h1 class="section-header">Portfolio</h1>
+          <p class="section-paragraph mx-auto">
             Landshapez takes pride in showcasing a diverse portfolio of previous work that reflects our expertise in landscaping services. 
             Our portfolio features an array of projects spanning various landscaping aspects, including gardening, paving and tiling, retaining, 
             and fencing. From lush garden transformations and intricately paved pathways to sturdy retaining walls and stylish fencing solutions. 
             You can browse through our portfolio to gain inspiration and confidence in our ability to bring your landscaping visions to life, 
             tailored to your unique preferences and needs.
           </p>
-          <button href="portfolio.html">View Portfolio</button>
+          <button class="button bolder" onclick="window.location.href='portfolio.html'">View Portfolio</button>
         </div>
-        <div class="picture-container">
+        </div>
+        <div class="picture-container col-12 col-md-12 col-lg-5 showcase-pictures">
+        <div class="portfolio-picture-background">
             <div class="row">
                 <div class="column">
                     <img
-            src="images/Last-landscaping-photos-40.jpg"
+            src="assets/Last-landscaping-photos-40.jpg"
             class="portfolio-picture"
             alt="Entrance with clay pavers"
           />
                 </div>
                 <div class="column">
                     <img
-            src="images/Last-landscaping-photos-13.jpg"
+            src="assets/Last-landscaping-photos-13.jpg"
             class="portfolio-picture"
             alt="Tiled pathway"
           />
@@ -440,7 +464,7 @@
             <div class="row">
                 <div class="column">
                     <img
-            src="images/Last-landscaping-photos-60.jpg"
+            src="assets/Last-landscaping-photos-60.jpg"
             class="portfolio-picture"
             alt="Garden with tiled path surrounded by white stone filler"
           />
@@ -449,49 +473,56 @@
             <div class="row">
                 <div class="column">
                     <img
-            src="images/Last-landscaping-photos-5.jpg"
+            src="assets/Last-landscaping-photos-5.jpg"
             class="portfolio-picture"
             alt="Backyard with ready lawn and planter box"
           />
                 </div>
                 <div class="column">
                     <img
-            src="images/More-landscaping-photos-59.jpg"
+            src="assets/More-landscaping-photos-59.jpg"
             class="portfolio-picture"
             alt="Front garden with paved path"
           />
                 </div>
             </div>
             </div>
+            </div>
+            </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact">
-        <div class="container-contact">
-          <h1>Contact</h1>
-          <p class="contact-paragraph">
+      <section id="contact" class="contact-section d-flex align-items-center">
+        <div class="container-contact col-sm-12">
+          <div class="container">
+          <h1 class="section-header">Contact</h1>
+          <p class="section-paragraph mx-auto">
             Contacting Landshapez is your first step towards bringing your garden vision to life. You can reach us 
             conveniently via email or mobile or by filling out the enquiry form to discuss your landscaping needs and desired services. 
             We are dedicated to understanding your vision and providing personalized solutions tailored to your preferences and budget. 
             Don't hesitate to get in touch with Landshapez today to embark on your journey towards a beautiful and functional outdoor oasis.
           </p>
-          <p class="email" href=""mailto:landshapez@hotmail.com>landshapez@hotmail.com</p>
-          <p class="phone-number">021 827 008</p>
+          <div class="details">
+          <a class="email bolder white-font" href="mailto:landshapez@hotmail.com">landshapez@hotmail.com</a>
+          <p class="phone-number bolder">021 827 008</p>
+        </div>
         </div>
 
         <!-- Contact Form -->
-        <div class="form-container">
-            <form action="/enquire" method="post">
-                <label for="full-name">Full Name</label><br>
+        <div class="form-container mx-auto">
+        <div class="form-background">
+          <h4 class="form-title bolder">Enquiry Form</h4>
+            <form action="https://formspree.io/f/mleqorne" method="POST">
+                <label class="label" for="full-name">Full Name</label>
                 <input type="text" id="full-name" name="full-name" maxlength="100" required />
                 
-                <label for="email">Email</label><br>
+                <label class="label" for="email">Email</label>
                 <input type="email" id="email" name="email" required />
 
-                <label for="phone">Phone Number</label><br>
+                <label class="label" for="phone">Phone Number</label>
                 <input type="tel" id="phone" name="phone" />
 
-                <label for="service">Service</label><br>
+                <label class="label" for="service">Service</label>
                 <select  id="service" name="service" required>
                     <option value="gardening">Gardening</option>
                     <option value="paving-tiling">Paving/Tiling</option>
@@ -499,21 +530,67 @@
                     <option value="fencing">Fencing</option>
                 </select>
 
-                <label for="description">Description</label><br>
+                <label class="label" for="description">Description</label>
                 <textarea type="text" id="description" name="description" placeholder="Describe the service you require..." cols="60" rows="8"></textarea>
 
-                <button type="submit" value="Submit">Submit</button>
+                <button class="button bolder margin" type="submit" value="Submit">Submit</button>
             </form>
+        </div>
         </div>
       </section>
       </main>
 
       <!-- Footer -->
-      <footer>
-        <hr class="socket">
+      <footer class="footer">
+        <div class="text-center">
+          <button class="to-top" onClick="toTop()">Back to Top</button>
+        </div>
+        <hr class="socket mx-auto">
             <p class="copy">&copy; LANDSHAPEZ. All rights reserved.</p>
         </hr>
       </footer>
 
+  <!-- Chatbot -->
+  <div>
+  <button class="chatbot-toggler">
+    <span class="material-symbols-outlined">mode_comment</span>
+    <span class="material-symbols-outlined">close</span>
+  </button>
+  <div class="chatbot">
+    <h5 class="chatbot-heading">Landscaping Bot</h5>
+    <ul class="chatbox">
+      <li class="chat incoming">
+        <span class="material-symbols-outlined">
+          <img src="assets/chatbot.png" alt="picture of a robot" width="30" height="30" />
+        </span>
+        <p>Gidday!<br>What would you like to know more about?
+        <br><br>Please enter one of the options listed below...
+        <br><br>- The company and landscaper experience
+        <br>- Gardening
+        <br>- Paving or tiling
+        <br>- Retaining
+        <br>- Fencing
+        <br>- Get in contact
+        <br>- Previous work/portfolio
+        <br>- How to use the filter by on the portfolio page
+        <br>- Get back to the home page
+        <br>- How to use the hamburger menu
+      </p>
+      </li>
+    </ul>
+    <div class="chat-input">
+      <textarea placeholder="Enter a question..." required></textarea>
+      <span id="send-btn" class="material-symbols-outlined">send</span>
+    </div>
+  </div>
+  </div>
+
+    <!-- JavaScript Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/sticky-navbar.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/scroll-animation.js"></script>
+    <script src="js/chat-bot.js" defer></script>
+    <script src="js/to-top.js"></script>
   </body>
 </html>
