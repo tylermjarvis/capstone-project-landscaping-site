@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const Chatbot = () => {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "/js/chat-bot.js";
+    script.src = "js/chat-bot.js";
     script.type = "module";
     script.defer = true;
 
