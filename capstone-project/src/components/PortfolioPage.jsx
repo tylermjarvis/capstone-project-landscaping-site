@@ -27,8 +27,13 @@ import "../App.css";
 import FilterButtons from "../js/filter-by";
 import "../js/scroll-animation";
 import "../js/sticky-navbar";
+import { Link } from "react-router-dom";
 
 const PortfolioPage = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       {/* <!-- Navbar --> */}
@@ -417,12 +422,9 @@ const PortfolioPage = () => {
             </div>
 
             <div className="button-container">
-              <button
-                className="portfolio-button bolder"
-                onClick={() => (window.location.href = "/")}
-              >
-                Home
-              </button>
+              <Link className="text-center" to="/" onClick={scrollToTop}>
+                <button className="portfolio-button bolder">Home</button>
+              </Link>
             </div>
           </div>
         </section>

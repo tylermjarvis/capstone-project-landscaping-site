@@ -1,20 +1,20 @@
 import ChatBot from "../assets/chatbot.png";
 import "../App.css";
-// import { useEffect } from "react";
+import { useEffect } from "react";
 
 const Chatbot = () => {
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "src/js/chat-bot.js";
-  //   script.type = "module";
-  //   script.defer = true;
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "src/js/chat-bot.js";
+    script.type = "module";
+    script.defer = true;
 
-  //   document.body.appendChild(script);
+    document.body.appendChild(script);
 
-  //   return () => {
-  //     document.body.removeChild(script);
-  //   };
-  // }, []);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <>

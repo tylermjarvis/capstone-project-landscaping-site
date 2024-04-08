@@ -4,8 +4,13 @@ import PortfolioPicThree from "../assets/Last-landscaping-photos-60.jpg";
 import PortfolioPicFour from "../assets/Last-landscaping-photos-5.jpg";
 import PortfolioPicFive from "../assets/More-landscaping-photos-59.jpg";
 import "../App.css";
+import { Link } from "react-router-dom";
 
 const Portfolio = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <section
@@ -29,12 +34,13 @@ const Portfolio = () => {
                   our ability to bring your landscaping visions to life,
                   tailored to your unique preferences and needs.
                 </p>
-                <button
-                  className="button bolder"
-                  onClick={() => (window.location.href = "/portfolio")}
+                <Link
+                  className="text-center"
+                  to="/portfolio"
+                  onClick={scrollToTop}
                 >
-                  View Portfolio
-                </button>
+                  <button className="button bolder">View Portfolio</button>
+                </Link>
               </div>
             </div>
             <div className="picture-container col-12 col-md-12 col-lg-5 showcase-pictures">
