@@ -64,22 +64,22 @@ const NavBar = () => {
                 </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink className="nav-link" href="#about">
+                <HashLink className="nav-link" to="#about">
                   About
                 </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink className="nav-link" href="#gardening">
+                <HashLink className="nav-link" to="#gardening">
                   Gardening
                 </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink className="nav-link" href="#paving-tiling">
+                <HashLink className="nav-link" to="#paving-tiling">
                   Paving/Tiling
                 </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink className="nav-link" href="#retaining">
+                <HashLink className="nav-link" to="#retaining">
                   Retaining
                 </HashLink>
               </li>
@@ -98,7 +98,7 @@ const NavBar = () => {
                 </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink className="nav-link" href="#contact">
+                <HashLink className="nav-link" to="#contact">
                   Contact
                 </HashLink>
               </li>
