@@ -1,3 +1,7 @@
+// Has been added directly to the ChatBot component under
+// useEffect. This has been changed due to errors when building
+// the site
+
 import ChatBot from "../assets/chatbot.png";
 
 const chatInput = document.querySelector(".chat-input textarea");
