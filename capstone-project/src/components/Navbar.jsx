@@ -1,9 +1,14 @@
 import LogoImage from "../assets/Landshapez_Logo.png";
 import "../App.css";
 import { useState, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 
 const NavBar = () => {
   const [isSticky, setIsSticky] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,44 +55,52 @@ const NavBar = () => {
           >
             <ul className="navbar-nav nav-list">
               <li className="nav-item">
-                <a className="nav-link active" href="/">
+                <HashLink
+                  className="nav-link active"
+                  to="/"
+                  onClick={scrollToTop}
+                >
                   Home
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#about">
+                <HashLink className="nav-link" href="#about">
                   About
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#gardening">
+                <HashLink className="nav-link" href="#gardening">
                   Gardening
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#paving-tiling">
+                <HashLink className="nav-link" href="#paving-tiling">
                   Paving/Tiling
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#retaining">
+                <HashLink className="nav-link" href="#retaining">
                   Retaining
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#fencing">
+                <HashLink className="nav-link" to="#fencing">
                   Fencing
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/portfolio">
+                <HashLink
+                  className="nav-link"
+                  to="/portfolio"
+                  onClick={scrollToTop}
+                >
                   Portfolio
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">
+                <HashLink className="nav-link" href="#contact">
                   Contact
-                </a>
+                </HashLink>
               </li>
             </ul>
           </div>
