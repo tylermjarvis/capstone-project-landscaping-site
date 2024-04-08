@@ -1,12 +1,11 @@
 import ChatBot from "../assets/chatbot.png";
 import "../App.css";
 import { useEffect } from "react";
-// import ChatbotFunction from "../js/chat-bot";
 
 const Chatbot = () => {
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "../js/chat-bot.js";
+    script.src = "src/js/chat-bot.js";
     script.type = "module";
     script.defer = true;
 

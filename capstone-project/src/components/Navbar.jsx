@@ -80,7 +80,7 @@ const NavBar = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/portfolio">
+                <a className="nav-link" href="portfolio">
                   Portfolio
                 </a>
               </li>
