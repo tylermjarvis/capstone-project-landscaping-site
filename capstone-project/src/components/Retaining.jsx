@@ -18,7 +18,7 @@ const Retaining = () => {
                 We provide quality service for the construction of sturdy and
                 aesthetically pleasing retaining walls using a variety of
                 materials, including sleepers and keystone walls. Whether
-                it&quot;s to level uneven terrain, prevent erosion, or create
+                it&apos;s to level uneven terrain, prevent erosion, or create
                 defined garden beds, our team is dedicated to delivering
                 top-quality solutions that enhance both the functionality and
                 visual appeal of outdoor environments.

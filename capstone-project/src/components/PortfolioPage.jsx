@@ -90,7 +90,7 @@ const PortfolioPage = () => {
               <p className="section-paragraph mx-auto">
                 Our portfolio features a user-friendly filter option, allowing
                 you to easily retrieve assets specific to the service
-                you&quot;re interested in. Whether it&quot;s gardening, paving
+                you&apos;re interested in. Whether it&apos;s gardening, paving
                 and tiling, retaining or fencing, you can quickly access
                 relevant assets that inspire and inform your project ideas. Our
                 portfolio offers a visual journey through our expertise and

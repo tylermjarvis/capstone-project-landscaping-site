@@ -21,7 +21,7 @@ const Hero = () => {
             <br />
             From Lush Green Gardens to Unique Paving
           </p>
-          <p className="caption-2">We&quot;ve Got You Covered!!</p>
+          <p className="caption-2">We&apos;ve Got You Covered!!</p>
         </div>
       </div>
     </section>

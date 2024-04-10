@@ -16,7 +16,7 @@ const PavingTiling = () => {
               <p className="section-paragraph mx-auto">
                 We specialize in crafting elegant and durable paving and tiling
                 solutions for gardens, pool areas, pool coping, driveways and
-                patios. Whether it&quot;s creating a sophisticated pathway
+                patios. Whether it&apos;s creating a sophisticated pathway
                 through a garden oasis or enhancing the functionality and
                 aesthetics of pool surroundings, we prioritize quality
                 craftsmanship and attention to detail in every project.

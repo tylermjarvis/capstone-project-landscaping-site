@@ -16,7 +16,7 @@ const Contact = () => {
               mobile or by filling out the enquiry form to discuss your
               landscaping needs and desired services. We are dedicated to
               understanding your vision and providing personalized solutions
-              tailored to your preferences and budget. Don&quot;t hesitate to
+              tailored to your preferences and budget. Don&apos;t hesitate to
               get in touch with Landshapez today to embark on your journey
               towards a beautiful and functional outdoor oasis.
             </p>

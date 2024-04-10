@@ -18,7 +18,7 @@ const Fencing = () => {
                 enhance privacy, security, and aesthetic appeal in outdoor
                 spaces. We specialize in the installation of wooden and steel
                 fencing solutions tailored to the specific needs of each client,
-                whether you&quot;re looking for a rustic charm with wooden
+                whether you&apos;re looking for a rustic charm with wooden
                 fencing or a sleek and modern look with steel fencing.
               </p>
             </div>
