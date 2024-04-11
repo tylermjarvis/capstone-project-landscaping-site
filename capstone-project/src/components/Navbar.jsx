@@ -2,7 +2,6 @@ import LogoImage from "../assets/Landshapez_Logo.png";
 import "../App.css";
 import { useState, useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
-import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -65,11 +64,9 @@ const NavBar = () => {
                 </HashLink>
               </li>
               <li className="nav-item">
-                {/* <HashLink className="nav-link" to="#about"> */}
-                <Link className="nav-link" to="#about">
+                <HashLink className="nav-link" to="#about">
                   About
-                </Link>
-                {/* </HashLink> */}
+                </HashLink>
               </li>
               <li className="nav-item">
                 <HashLink className="nav-link" to="#gardening">
@@ -92,15 +89,13 @@ const NavBar = () => {
                 </HashLink>
               </li>
               <li className="nav-item">
-                {/* <HashLink
+                <HashLink
                   className="nav-link"
                   to="/portfolio"
                   onClick={scrollToTop}
-                > */}
-                <a className="nav-link" href="/portfolio">
+                >
                   Portfolio
-                </a>
-                {/* </HashLink> */}
+                </HashLink>
               </li>
               <li className="nav-item">
                 <HashLink className="nav-link" to="#contact">

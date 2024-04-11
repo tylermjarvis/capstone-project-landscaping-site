@@ -724,21 +724,32 @@ form select {
 
   .gardening-section {
     height: 100vh;
-    padding-top: 0;
+    padding: 4rem;
+  }
+
+  .paving-tiling-section {
+    height: 100vh;
+    padding: 4rem;
   }
 
   .retaining-section {
     height: 100vh;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 4rem;
+  }
+
+  .fencing-section {
+    height: 100vh;
+    padding: 4rem;
   }
 
   .portfolio-section {
     height: 100vh;
+    padding: 4rem;
   }
 
   .contact-section {
     height: 100vh;
+    padding: 4rem;
   }
 
   .section-header {
