@@ -85,7 +85,9 @@ const PavingTiling = () => {
                   Bunnings
                 </a>
               </li>
-              <div className="content-underline white-underline mx-auto"></div>
+              <li>
+                <div className="content-underline white-underline mx-auto"></div>
+              </li>
               <li className="suppliers-list-item">
                 <a
                   className="suppliers-link black-font different-hover"

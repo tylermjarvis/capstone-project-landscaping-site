@@ -110,7 +110,9 @@ const Gardening = () => {
                   Bunnings
                 </a>
               </li>
-              <div className="content-underline black-underline mx-auto"></div>
+              <li>
+                <div className="content-underline black-underline mx-auto"></div>
+              </li>
               <li className="suppliers-list-item">
                 <a
                   className="suppliers-link white-font"
