@@ -1,6 +1,6 @@
-import GardenPicOne from "../assets/Planting 1.jpg";
-import GardenPicTwo from "../assets/Landscaping-photo-27.jpg";
-import GardenPicThree from "../assets/Landscaping-photo-43.jpg";
+import GardenPicOne from "../assets/Planting 1.webp";
+import GardenPicTwo from "../assets/Landscaping-photo-27.webp";
+import GardenPicThree from "../assets/Landscaping-photo-43.webp";
 import "../App.css";
 
 const Gardening = () => {
@@ -57,6 +57,8 @@ const Gardening = () => {
                     src={GardenPicTwo}
                     className="gardening image"
                     alt="Freshly laid ready lawn"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header">Ready Lawn</h2>
@@ -77,6 +79,8 @@ const Gardening = () => {
                     src={GardenPicThree}
                     className="gardening image"
                     alt="A maintained garden area"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header">Maintenance</h2>

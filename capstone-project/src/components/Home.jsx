@@ -6,6 +6,7 @@ import Retaining from "./Retaining";
 import Fencing from "./Fencing";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import "../App.css";
 
 const Home = () => {
   return (

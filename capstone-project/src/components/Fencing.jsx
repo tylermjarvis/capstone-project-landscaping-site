@@ -1,5 +1,5 @@
-import FencingPicOne from "../assets/Landscaping-photo-19.jpg";
-import FencingPicTwo from "../assets/Steel-fencing2.jpg";
+import FencingPicOne from "../assets/Landscaping-photo-19.webp";
+import FencingPicTwo from "../assets/Steel-fencing2.webp";
 import "../App.css";
 
 const Fencing = () => {
@@ -33,6 +33,8 @@ const Fencing = () => {
                     src={FencingPicOne}
                     className="fencing image"
                     alt="Thin wood fencing"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header white-font">Wooden Fencing</h2>
@@ -52,6 +54,8 @@ const Fencing = () => {
                     src={FencingPicTwo}
                     className="fencing image"
                     alt="Black steel fencing"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header white-font">Steel Fencing</h2>

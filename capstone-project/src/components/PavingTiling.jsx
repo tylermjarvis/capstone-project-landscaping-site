@@ -1,5 +1,5 @@
-import PavingPicOne from "../assets/Last-landscaping-photos-77.jpg";
-import PavingPicTwo from "../assets/More-landscaping-photos-19.jpg";
+import PavingPicOne from "../assets/Last-landscaping-photos-77.webp";
+import PavingPicTwo from "../assets/More-landscaping-photos-19.webp";
 import "../App.css";
 
 const PavingTiling = () => {
@@ -33,6 +33,8 @@ const PavingTiling = () => {
                     src={PavingPicOne}
                     className="paving-tiling image"
                     alt="Paved pathway"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header white-font">Paving</h2>
@@ -52,6 +54,8 @@ const PavingTiling = () => {
                     src={PavingPicTwo}
                     className="paving-tiling image"
                     alt="Laid tiles in a backyard"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header white-font">Tiling</h2>

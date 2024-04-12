@@ -1,6 +1,6 @@
-import RetainingPicOne from "../assets/Sleeper 3.jpg";
-import RetainingPicTwo from "../assets/Landscaping-photo-35.jpg";
-import RetainingPicThree from "../assets/More-landscaping-photos-15.jpg";
+import RetainingPicOne from "../assets/Sleeper 3.webp";
+import RetainingPicTwo from "../assets/Landscaping-photo-35.webp";
+import RetainingPicThree from "../assets/More-landscaping-photos-15.webp";
 import "../App.css";
 
 const Retaining = () => {
@@ -35,6 +35,8 @@ const Retaining = () => {
                     src={RetainingPicOne}
                     className="retaining image"
                     alt="Wooden sleepers stairs"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header black-font">Sleepers</h2>
@@ -53,6 +55,8 @@ const Retaining = () => {
                     src={RetainingPicTwo}
                     className="retaining image"
                     alt="Large keystone wall behind stairs"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header white-font">KeyStones</h2>
@@ -71,6 +75,8 @@ const Retaining = () => {
                     src={RetainingPicThree}
                     className="retaining image"
                     alt="Wooden wall retaining garden"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header black-font">

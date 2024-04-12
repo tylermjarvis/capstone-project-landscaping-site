@@ -1,8 +1,8 @@
-import PortfolioPicOne from "../assets/Last-landscaping-photos-40.jpg";
-import PortfolioPicTwo from "../assets/Last-landscaping-photos-13.jpg";
-import PortfolioPicThree from "../assets/Last-landscaping-photos-60.jpg";
-import PortfolioPicFour from "../assets/Last-landscaping-photos-5.jpg";
-import PortfolioPicFive from "../assets/More-landscaping-photos-59.jpg";
+import PortfolioPicOne from "../assets/Last-landscaping-photos-40.webp";
+import PortfolioPicTwo from "../assets/Last-landscaping-photos-13.webp";
+import PortfolioPicThree from "../assets/Last-landscaping-photos-60.webp";
+import PortfolioPicFour from "../assets/Last-landscaping-photos-5.webp";
+import PortfolioPicFive from "../assets/More-landscaping-photos-59.webp";
 import "../App.css";
 import { Link } from "react-router-dom";
 
@@ -51,6 +51,8 @@ const Portfolio = () => {
                       src={PortfolioPicOne}
                       className="portfolio-picture"
                       alt="Entrance with clay pavers"
+                      width="500"
+                      height="300"
                     />
                   </div>
                   <div className="column">
@@ -58,6 +60,8 @@ const Portfolio = () => {
                       src={PortfolioPicTwo}
                       className="portfolio-picture"
                       alt="Tiled pathway"
+                      width="500"
+                      height="300"
                     />
                   </div>
                 </div>
@@ -67,6 +71,8 @@ const Portfolio = () => {
                       src={PortfolioPicThree}
                       className="portfolio-picture"
                       alt="Garden with tiled path surrounded by white stone filler"
+                      width="800"
+                      height="600"
                     />
                   </div>
                 </div>
@@ -76,6 +82,8 @@ const Portfolio = () => {
                       src={PortfolioPicFour}
                       className="portfolio-picture"
                       alt="Backyard with ready lawn and planter box"
+                      width="500"
+                      height="300"
                     />
                   </div>
                   <div className="column">
@@ -83,6 +91,8 @@ const Portfolio = () => {
                       src={PortfolioPicFive}
                       className="portfolio-picture"
                       alt="Front garden with paved path"
+                      width="500"
+                      height="300"
                     />
                   </div>
                 </div>

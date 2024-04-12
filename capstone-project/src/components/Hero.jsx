@@ -1,5 +1,5 @@
 import "../App.css";
-import HeroImage from "../assets/Hero_Image.jpg";
+import HeroImage from "../assets/Hero_Image.webp";
 
 var heroBackground = {
   backgroundImage: `url(${HeroImage})`,
