@@ -36,6 +36,8 @@ const Gardening = () => {
                     src={GardenPicOne}
                     className="gardening image"
                     alt="Plants with garden filler"
+                    width="500"
+                    height="300"
                   />
                   <figcaption className="figcaption">
                     <h2 className="figure-header">Planting</h2>
