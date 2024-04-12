@@ -70,7 +70,7 @@ const ScrollRevealConfig = () => {
     //   distance: "10px",
     // });
     sr.reveal(".caption", {
-      duration: 2500,
+      duration: 1500,
       origin: "bottom",
       distance: "30px",
     });
