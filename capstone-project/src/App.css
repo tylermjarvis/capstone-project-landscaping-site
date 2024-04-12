@@ -757,10 +757,15 @@ form select {
 
   .about-section {
     height: auto;
-    padding: 6rem;
+    padding: 7rem;
   }
 
   .gardening-section {
+    height: auto;
+    padding: 6rem;
+  }
+
+  .paving-tiling-section {
     height: auto;
     padding: 6rem;
   }
