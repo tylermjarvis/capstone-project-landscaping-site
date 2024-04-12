@@ -303,7 +303,6 @@ body {
   position: absolute;
   top: 50%;
   left: 2.1%;
-  display: block;
   background-color: rgba(62, 52, 45, 0.85);
   border-radius: 0.2rem;
   color: var(--font-color2);
@@ -313,14 +312,8 @@ body {
   font-weight: 300;
 }
 
-.caption-1,
-.caption-2,
-.caption-3 {
+.caption-2 {
   margin: 0;
-}
-
-.caption-4 {
-  margin: 1.2rem 0 0 0;
 }
 
 /*-- About Section -- */
