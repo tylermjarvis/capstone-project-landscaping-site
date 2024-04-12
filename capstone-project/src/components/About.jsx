@@ -30,6 +30,8 @@ const About = () => {
                 src={ProfilePic}
                 className="about-image"
                 alt="Andy's picture"
+                width="800"
+                height="600"
               />
             </div>
           </div>

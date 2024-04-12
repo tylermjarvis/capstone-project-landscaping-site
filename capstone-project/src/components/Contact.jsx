@@ -34,7 +34,7 @@ const Contact = () => {
           {/* <!-- Contact Form --> */}
           <div className="form-container mx-auto">
             <div className="form-background">
-              <h4 className="form-title bolder">Enquiry Form</h4>
+              <h2 className="form-title bolder">Enquiry Form</h2>
               <form action="https://formspree.io/f/mleqorne" method="POST">
                 <label className="label" htmlFor="full-name">
                   Full Name

@@ -69,11 +69,11 @@ const ScrollRevealConfig = () => {
     //   origin: "top",
     //   distance: "10px",
     // });
-    // sr.reveal(".caption", {
-    //   duration: 1000,
-    //   origin: "bottom",
-    //   distance: "30px",
-    // });
+    sr.reveal(".caption", {
+      duration: 800,
+      origin: "bottom",
+      distance: "30px",
+    });
     sr.reveal(".showcase-card", {
       duration: 1200,
       origin: "bottom",
