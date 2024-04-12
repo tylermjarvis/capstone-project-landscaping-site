@@ -714,34 +714,34 @@ form select {
 }
 
 /*-- Small Laptop Desktop View --*/
-@media screen and (min-width: 50rem) {
+@media screen and (min-width: 48rem) {
   .gardening-section {
-    height: auto;
+    height: 130vh;
     padding: 2rem;
   }
 
   .paving-tiling-section {
-    height: auto;
+    height: 130vh;
     padding: 2rem;
   }
 
   .retaining-section {
-    height: auto;
+    height: 130vh;
     padding: 2rem;
   }
 
   .fencing-section {
-    height: auto;
+    height: 130vh;
     padding: 2rem;
   }
 
   .portfolio-section {
-    height: auto;
+    height: 130vh;
     padding: 2rem;
   }
 
   .contact-section {
-    height: auto;
+    height: 130vh;
     padding: 2rem;
   }
 }
