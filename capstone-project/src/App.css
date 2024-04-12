@@ -714,7 +714,7 @@ form select {
 }
 
 /*-- Small Laptop Desktop View --*/
-@media screen and (max-width: 52rem) {
+@media screen and (min-width: 50rem) {
   .gardening-section {
     height: auto;
     padding: 2rem;
