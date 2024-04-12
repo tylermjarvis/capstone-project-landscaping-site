@@ -714,7 +714,7 @@ form select {
 }
 
 /*-- Small Laptop Desktop View --*/
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 58rem) {
   .gardening-section {
     height: 130vh;
     padding: 2rem;
@@ -747,7 +747,7 @@ form select {
 }
 
 /*-- Large Desktop View --*/
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 70rem) {
   .caption {
     top: 45%;
     left: 15%;
