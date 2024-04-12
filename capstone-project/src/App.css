@@ -755,23 +755,34 @@ form select {
     padding: 1.6rem;
   }
 
+  .about-section {
+    height: auto;
+    padding: 6rem;
+  }
+
   .gardening-section {
-    height: 130vh;
-    padding-top: 0;
+    height: auto;
+    padding: 6rem;
   }
 
   .retaining-section {
-    height: 130vh;
-    padding-top: 0;
-    padding-bottom: 0;
+    height: auto;
+    padding: 6rem;
+  }
+
+  .fencing-section {
+    height: auto;
+    padding: 6rem;
   }
 
   .portfolio-section {
-    height: 130vh;
+    height: auto;
+    padding: 6rem;
   }
 
   .contact-section {
-    height: 130vh;
+    height: auto;
+    padding: 6rem;
   }
 
   .section-header {

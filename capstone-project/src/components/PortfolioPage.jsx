@@ -67,14 +67,18 @@ const PortfolioPage = () => {
           >
             <ul className="navbar-nav nav-list">
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link active" to="/" onClick={scrollToTop}>
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" href="/portfolio">
+                <Link
+                  className="nav-link"
+                  to="/portfolio"
+                  onClick={scrollToTop}
+                >
                   Portfolio
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
