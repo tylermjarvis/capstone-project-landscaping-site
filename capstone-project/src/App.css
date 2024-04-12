@@ -713,41 +713,41 @@ form select {
   }
 }
 
-/*-- Small Laptop Desktop View --*/
-@media screen and (min-width: 58rem) {
+/* -- Small Laptop Desktop View --
+@media screen and (max-width: 52rem) {
   .gardening-section {
     height: 130vh;
     padding: 2rem;
   }
 
   .paving-tiling-section {
-    height: 130vh;
+    height: auto;
     padding: 2rem;
   }
 
   .retaining-section {
-    height: 130vh;
+    height: auto;
     padding: 2rem;
   }
 
   .fencing-section {
-    height: 130vh;
+    height: auto;
     padding: 2rem;
   }
 
   .portfolio-section {
-    height: 130vh;
+    height: auto;
     padding: 2rem;
   }
 
   .contact-section {
-    height: 130vh;
+    height: auto;
     padding: 2rem;
   }
-}
+} */
 
 /*-- Large Desktop View --*/
-@media screen and (min-width: 70rem) {
+@media screen and (min-width: 62rem) {
   .caption {
     top: 45%;
     left: 15%;
@@ -756,22 +756,22 @@ form select {
   }
 
   .gardening-section {
-    height: 100vh;
+    height: 130vh;
     padding-top: 0;
   }
 
   .retaining-section {
-    height: 100vh;
+    height: 130vh;
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .portfolio-section {
-    height: 100vh;
+    height: 130vh;
   }
 
   .contact-section {
-    height: 100vh;
+    height: 130vh;
   }
 
   .section-header {
